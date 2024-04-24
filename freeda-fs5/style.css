@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid red;
+}
+
+.btn {
+  background: #FACB36;
+  padding: 10px 40px;
+  display: inline-block;
+}
+
+.btn-yellow {
+  background: #FACB36;
+  color: #444645;
+  border-radius: 10px;
+}
+
+nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #FACB36;
+  margin-left: 50px;
+  margin-left: 50px;
+}
+nav a:hover {
+  color: white;
+}
+
+.main-header {
+  background-image: url(img/coffee-slajd-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.main-header p {
+  padding: 20px 0 40px;
+}/*# sourceMappingURL=style.css.map */
