@@ -7,9 +7,14 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #444645;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Amatic SC", sans-serif;
 }
 
@@ -19,6 +24,10 @@ h1 {
 
 h2 {
   font-size: 48px;
+}
+
+h3 {
+  font-size: 27px;
 }
 
 ul {
@@ -34,13 +43,14 @@ a {
   max-width: 1140px;
   width: 100%;
   margin: auto;
-  border: 1px solid red;
+  /*border: 1px solid red*/
 }
 
 .btn {
   background: #FACB36;
   padding: 10px 40px;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .btn-yellow {
@@ -49,10 +59,27 @@ a {
   border-radius: 10px;
 }
 
+.btn-yellow-outline {
+  background: transparent;
+  border: 2px solid #FACB36;
+  color: #FACB36;
+}
+.btn-yellow-outline:hover {
+  background: #FACB36;
+  color: black;
+}
+
+.py {
+  padding: 80px 0;
+}
+
 nav {
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
+  z-index: 1;
+  /*ja dooooooodo **************
+  ************************/
 }
 nav .container {
   display: flex;
@@ -77,6 +104,100 @@ nav a:hover {
   color: white;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
+footer {
+  background: #444645;
+}
+footer img {
+  width: 500px;
+  margin: auto;
+}
+footer p {
+  color: white;
+  padding: 25px 0 35px 0;
+}
+footer form {
+  max-width: 800px;
+  /*ona je 800 ali uvek bude u sirini roditeljskog elementa*/
+  width: 100%;
+  /*border: 1px solid red;*/
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer form input {
+  flex: 0 0 49%;
+  padding: 13px 0;
+}
+footer form a {
+  flex: 0 0 49%;
+  padding: 13px 0;
+  background: black;
+  font-size: 17px;
+  font-weight: bold;
+  color: #FACB36;
+}
+
+.bottom-bar {
+  padding: 25px 0;
+  background: #FACB36;
+}
+.bottom-bar a {
+  color: black;
+}
+.bottom-bar a:hover {
+  color: #4d4d4d;
+}
+
+.headers {
+  position: relative;
+}
+.headers img {
+  filter: brightness(0.5);
+}
+.headers h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FACB36;
+}
+
+.dogadjaji {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dogadjaji div {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px;
+  flex: 0 0 30%;
+  overflow: hidden;
+}
+.dogadjaji div img {
+  width: 100%;
+}
+.dogadjaji div div {
+  padding: 30px;
+}
+.dogadjaji div div h3 {
+  margin: 13px 0;
+}
+.dogadjaji div div span {
+  color: #FACB36;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .main-header {
   background-image: url(img/coffee-slajd-1.jpg);
   background-position: center;
@@ -91,4 +212,185 @@ nav a:hover {
 }
 .main-header p {
   padding: 20px 0 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ponuda h2 {
+  color: #FACB36;
+}
+.ponuda h2 + p {
+  padding: 25px 0 76px 0;
+}
+.ponuda article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ponuda article div {
+  flex: 0 0 32%;
+}
+.ponuda img {
+  border: 5px solid #FACB36;
+  border-radius: 100%;
+}
+.ponuda h3 {
+  margin: 45px 0px 10px 0px;
+  font-size: 24px;
+}
+
+.meni {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.meni div h2 {
+  color: #FACB36;
+}
+.meni div:first-child {
+  flex: 0 0 60%;
+}
+.meni div:first-child .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.meni div:first-child .row .menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 50%;
+  margin-bottom: 40px;
+}
+.meni div:first-child .row .menu-item .img {
+  flex: 0 0 40%;
+}
+.meni div:first-child .row .menu-item .img img {
+  border-radius: 100%;
+  width: 100px;
+}
+.meni div:first-child .row .menu-item .text {
+  flex: 0 0 60%;
+}
+.meni div:first-child .row .menu-item .text h3 {
+  font-size: 27px;
+  color: #FACB36;
+}
+.meni div:first-child .row .menu-item .text p {
+  color: white;
+  padding: 10px 0;
+}
+.meni div:first-child .row .menu-item .text span {
+  color: #FACB36;
+  font-weight: bold;
+}
+.meni div:last-child {
+  flex: 0 0 40%;
+}
+
+.usluge h2 {
+  color: #FACB36;
+}
+.usluge h2 + p {
+  padding: 25px 0 76px 0;
+}
+.usluge article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.usluge article div {
+  flex: 0 0 50%;
+}
+.usluge article div:last-child {
+  background: #FCF4EA;
+  padding: 100px 50px 50px 50px;
+}
+.usluge article div:last-child h3 {
+  color: #FACB36;
+  margin-bottom: 10px;
+}
+.usluge article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.poruci {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(252, 244, 234, 0.9)), url(img/coffee\ 5.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+}
+.poruci h2 {
+  color: #FACB36;
+}
+.poruci p {
+  color: white;
+  padding: 20px 0 20px 0;
+}
+
+.kontakt h2 {
+  margin-bottom: 25px;
+}
+.kontakt div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.kontakt div i {
+  font-size: 1.2rem;
+  margin-right: 20px;
+  color: #FACB36;
+}
+.kontakt div ul {
+  flex: 0 0 30%;
+  line-height: 36px;
+}
+.kontakt div li {
+  font-size: 18px;
+}
+.kontakt div form {
+  flex: 0 0 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.kontakt div form input {
+  flex: 0 0 49%;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #a1a2a1;
+}
+.kontakt div form textarea {
+  border: 1px solid #a1a2a1;
+  flex: 0 0 100%;
+  height: 137px;
+  font-size: 18px;
+  margin: 20px 0 30px 0;
+}
+.kontakt div form button {
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.kontakt div form button:hover {
+  background: black;
+  color: #FACB36;
 }/*# sourceMappingURL=style.css.map */

@@ -1,27 +1,204 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 //basics
-*{margin:0;
-  padding:0;
- box-sizing: border-box;}
-body{font-family: $bodyFont;}
-h1,h2,h3,h4{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $bodyFont;
+    font-weight: 300;
+    color: $text;
+}
+
+h1,
+h2,
+h3,
+h4 {
     font-family: $headingsFont;
 }
-h1{font-size: 64px;}
-h2{font-size: 48px;}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
 ul {
     list-style: none;
-   
-}
-a{text-decoration: none;
-transition: $transition;}
 
-.container{max-width: 1140px;
-    width:100%;
-margin:auto;
- border:1px solid red}
- .btn{background: $accents;
-padding:10px 40px;
- display:inline-block}
- .btn-yellow{background: $accents;
-color:$text;border-radius: 10px;}
+}
+
+a {
+    text-decoration: none;
+    transition: $transition;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    /*border: 1px solid red*/
+}
+
+.btn {
+    background: $accents;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.btn-yellow {
+    background: $accents;
+    color: $text;
+    border-radius: 10px;
+}
+
+.btn-yellow-outline {
+    background: transparent;
+    border: 2px solid $accents;
+    color: $accents;
+
+    &:hover {
+        background: $accents;
+        color: $black
+    }
+}
+
+.py {
+    padding: 80px 0;
+}
+
+//nav
+nav {
+    position: fixed;
+    background: rgba($black, 0.8);
+    width: 100%;
+    z-index: 1;
+    /*ja dooooooodo **************
+    ************************/
+
+    .container {
+        @include flex()
+    }
+
+    ul {
+        @include flex()
+    }
+
+    a {
+        color: $accents;
+        margin-left: 50px;
+        margin-left: 50px;
+
+        &:hover {
+            color: $white
+        }
+    }
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+//footer
+footer {
+    background: $text;
+
+    img {
+        width: 500px;
+        margin: auto
+    }
+
+    p {
+        color: $white;
+        padding: 25px 0 35px 0
+    }
+
+    form {
+        max-width: 800px;
+        /*ona je 800 ali uvek bude u sirini roditeljskog elementa*/
+        width: 100%;
+        /*border: 1px solid red;*/
+        margin: auto;
+        @include flex();
+
+        input {
+            flex: 0 0 49%;
+            padding: 13px 0
+        }
+
+        ;
+
+        a {
+            flex: 0 0 49%;
+            padding: 13px 0;
+            background: $black;
+            font-size: 17px;
+            font-weight: bold;
+            color: $accents
+        }
+    }
+
+}
+
+//bottom bar
+.bottom-bar {
+    padding: 25px 0;
+    background: $accents ;
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: lighten($black, 30%)
+        }
+    }
+}
+
+//headers
+.headers {
+    position: relative;
+
+    img {
+        filter: brightness(0.5);
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $accents;
+    }
+}
+
+//dogadjaji
+.dogadjaji {
+    @include flex();
+
+    div {
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 20px;
+        flex: 0 0 30%;overflow: hidden;
+
+    
+
+    img {
+        width: 100%
+    }
+    div{padding:30px;
+    h3{margin:13px 0};
+      span{color:$accents;display:inline-block;
+          margin-bottom: 20px; }}
+
+}}

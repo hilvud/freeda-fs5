@@ -2,29 +2,6 @@
 @import 'mixins';
 @import 'globals';
 
-//nav
-nav {
-    position: fixed;
-    background: rgba($black, 0.8);
-    width: 100%;
-
-    .container {
-        @include flex()
-    }
-
-    ul {
-        @include flex()
-    }
-
-    a {
-        color: $accents;
-        margin-left: 50px;
-         margin-left: 50px;
-        &:hover {
-            color: $white
-        }
-    }
-}
 
 
 
@@ -40,5 +17,226 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
-p{padding:20px 0 40px}
+
+    p {
+        padding: 20px 0 40px
+    }
 }
+
+.text-center {
+    text-align: center;
+}
+
+//ponuda
+.ponuda {
+    h2 {
+        color: $accents;
+
+        &+p {
+            padding: 25px 0 76px 0
+        }
+    }
+
+    article {
+        @include flex();
+
+        div {
+            flex: 0 0 32%
+        }
+    }
+
+    img {
+        border: 5px solid $accents;
+        border-radius: 100%;
+    }
+
+    ;
+
+    h3 {
+        margin: 45px 0px 10px 0px;
+        font-size: 24px;
+    }
+}
+
+.meni {
+    background: $black;
+    @include flex();
+
+    div {
+        h2 {
+            color: $accents;
+        }
+
+        ;
+
+        &:first-child {
+            flex: 0 0 60%;
+
+            .row {
+                @include flex();
+                padding: 100px;
+
+                .menu-item {
+
+
+                    @include flex();
+                    flex: 0 0 50%;
+                    margin-bottom: 40px;
+
+                    .img {
+                        flex: 0 0 40%;
+
+
+                        img {
+                            border-radius: 100%;
+                            width: 100px
+                        }
+                    }
+
+                    .text {
+                        flex: 0 0 60%;
+
+                        h3 {
+                            font-size: 27px;
+                            color: $accents
+                        }
+
+                        p {
+                            color: $white;
+                            padding: 10px 0
+                        }
+
+                        ;
+
+                        span {
+                            color: $accents;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        &:last-child {
+            flex: 0 0 40%;
+        }
+    }
+
+}
+
+//usluge
+
+.usluge {
+    h2 {
+        color: $accents;
+
+        &+p {
+            padding: 25px 0 76px 0
+        }
+    }
+
+    article {
+        @include flex($align: stretch);
+
+        div {
+            flex: 0 0 50%;
+
+            &:last-child {
+                background: $bg;
+                padding: 100px 50px 50px 50px;
+
+                h3 {
+                    color: $accents;
+                    margin-bottom: 10px
+                }
+
+            }
+        }
+
+        ;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+    }
+
+}
+
+//poruci
+.poruci {
+    background: linear-gradient(to right, rgba($black, 0.8), rgba($bg, 0.9)), url(img/coffee\ 5.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+
+    h2 {
+        color: $accents
+    }
+
+    p {
+        color: $white;
+        padding: 20px 0 20px 0;
+    }
+}
+
+//kontakt
+.kontakt {
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    div {
+        @include flex($align: flex-start);
+
+        i {
+            font-size: 1.2rem;
+            margin-right: 20px;
+            color: $accents
+        }
+
+        ul {
+            flex: 0 0 30%;
+            line-height: 36px
+        }
+
+        ;
+
+        li {
+            font-size: 18px;
+        }
+
+        form {
+            flex: 0 0 70%;
+            @include flex();
+
+            input {
+                flex: 0 0 49%;
+                padding: 15px;
+                font-size: 18px;
+                border:1px solid $borders;
+            }
+
+            ;
+
+            textarea { border:1px solid $borders;
+                flex: 0 0 100%;
+                height: 137px;
+                font-size: 18px;
+                margin: 20px 0 30px 0;
+            }
+
+           button{border: none;
+        font-size: 1rem;
+        cursor:pointer;
+    &:hover{background:$black ;
+    color:$accents}} 
+
+        }
+
+
+    }
+}
+
