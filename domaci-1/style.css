@@ -1,0 +1,722 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*basic*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 79px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 1520px;
+  margin-inline: auto;
+}
+
+.dugme1 {
+  color: white;
+  background-color: #00C9B5;
+  border: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 220px;
+  height: 50px;
+}
+.dugme1:hover {
+  color: #00C9B5;
+  border: 2px solid black;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/****************************
+header
+***************************/
+header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/images/home-hero.png);
+  background-position: center;
+  background-size: cover;
+  height: 1094px;
+}
+header .container {
+  position: relative;
+}
+header .container .navigacija {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .navigacija img {
+  padding-top: 61px;
+}
+header .container .navigacija nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .navigacija nav a {
+  color: white;
+  margin-left: 43px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+header .container .navigacija nav a:hover {
+  color: red;
+}
+header .container .text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: strech;
+  justify-content: space-around;
+  width: 50%;
+  position: absolute;
+  top: 422px;
+  left: 0;
+}
+header .container .text h1 {
+  color: white;
+}
+header .container .text span {
+  color: #00C9B5;
+}
+header .container .text p {
+  color: white;
+  font-size: 22px;
+}
+header .container .text .dugme1 {
+  margin-top: 66px;
+}
+header .container .text button img {
+  width: 17.42px;
+  height: 17.88px;
+  color: #8A60FC;
+}
+
+/****************************
+kursevi
+***************************/
+.kursevi {
+  background-color: #140339;
+  height: 646px;
+}
+.kursevi .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.kursevi .container article {
+  position: relative;
+  margin-top: 192px;
+  width: 470px;
+  height: 322px;
+  background-color: white;
+  padding: 105px 80px 55px 65px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.kursevi .container article h1 {
+  font-size: 50px;
+}
+.kursevi .container article p {
+  width: 348px;
+  font-size: 18px;
+}
+.kursevi .container article span {
+  font-weight: bold;
+}
+.kursevi .container article img {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  top: -70px;
+  /*background-size: cover;*/
+  /* background-position: center;*/
+  background-color: #8A60FC;
+  border-radius: 100%;
+}
+
+/***********************************
+kursevi2
+**********************************/
+.kursevi2 {
+  background-color: #EEF1FF;
+  /*height: 1808px;*/
+  height: 2568px;
+}
+.kursevi2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.kursevi2 .container .text {
+  margin-top: 194px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.kursevi2 .container .text .prvi_div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  flex: 0 0 30%;
+}
+.kursevi2 .container .text .prvi_div div {
+  width: 20px;
+  height: 170px;
+  background-color: #8A60FC;
+}
+.kursevi2 .container .text .prvi_div h1 {
+  font-size: 50px !important;
+}
+.kursevi2 .container .text p {
+  font-size: 20px !important;
+  text-align: justify;
+  flex: 0 0 60%;
+}
+.kursevi2 .container .artikli {
+  margin-top: 171px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 56px;
+}
+.kursevi2 .container .artikli article {
+  position: relative;
+  width: 465px;
+  height: 783px;
+  /**********novo**********/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  background-color: #140339;
+  color: white;
+}
+.kursevi2 .container .artikli article img {
+  width: 465px;
+  height: 500px;
+}
+.kursevi2 .container .artikli article .program {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.kursevi2 .container .artikli article .program p {
+  font-size: 25px;
+}
+.kursevi2 .container .artikli article .program .krug {
+  width: 36px;
+  height: 21px;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  width: 76px;
+  height: 76px;
+}
+.kursevi2 .container .artikli article .program .krug p {
+  margin: 0;
+  text-align: center;
+}
+.kursevi2 .container .artikli article .program .krug p:first-child {
+  color: #8A60FC;
+  font-size: 29px !important;
+}
+.kursevi2 .container .artikli article .program .krug p:last-child {
+  color: #8A60FC;
+  font-size: 14px !important;
+  /*ja postavio*/
+}
+.kursevi2 .container .artikli article .text {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.kursevi2 .container .artikli article .text p {
+  color: white;
+  font-size: 18px !important;
+  text-align: left;
+}
+.kursevi2 .container .artikli article .text img {
+  width: 21px;
+  height: 21px;
+  color: #00C9B5;
+}
+
+/**********************
+o nama
+**********************/
+.o-nama {
+  height: 837px;
+  background-color: #140339;
+}
+.o-nama .container {
+  width: 1520px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.o-nama .container .text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.o-nama .container .text div {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+.o-nama .container .text div div {
+  position: absolute;
+  left: -150px;
+  width: 20px;
+  height: 200px;
+  background-color: #00C9B5;
+}
+.o-nama .container .text div h2 {
+  position: relative;
+  top: -60px;
+  left: -80px;
+  font-size: 50px;
+  color: white;
+}
+.o-nama .container .text p {
+  margin-top: 150px;
+  width: 520px;
+  font-size: 20px;
+  color: white;
+}
+.o-nama .container .slika img {
+  width: 862px;
+  height: 575px;
+  margin-top: 166px;
+}
+
+/**************************
+sa nama
+***************************/
+.sa-nama {
+  height: 1113px;
+  background-color: #EEF1FF;
+}
+.sa-nama .container {
+  width: 1520px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.sa-nama .container .text {
+  flex: 0 0 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+}
+.sa-nama .container .text div {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.sa-nama .container .text div div {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 20px;
+  height: 170px;
+  background-color: #00C9B5;
+}
+.sa-nama .container .text div h2 {
+  width: 418px;
+  position: absolute;
+  top: -100px;
+  left: 38px;
+  font-size: 50px;
+}
+.sa-nama .container .text p {
+  margin-top: 178px;
+  width: 456px;
+  font-size: 26px;
+}
+.sa-nama .container .kvadrat {
+  margin-top: 201px;
+  flex: 0 0 55%;
+  width: 862px;
+  height: 702px;
+  background-color: #140339;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.sa-nama .container .kvadrat h3 {
+  font-size: 40px;
+  color: white;
+}
+.sa-nama .container .kvadrat ul li img {
+  border-radius: 100%;
+  background-color: #00C9B5;
+  margin-right: 18.3px;
+  width: 34.88px;
+  height: 34.88px;
+}
+.sa-nama .container .kvadrat ul li {
+  font-family: "Poppins", sans-serif;
+  margin-top: 38.56px;
+  font-weight: 400;
+  font-style: normal;
+  color: #00C9B5;
+  font-size: 40px;
+  list-style: none;
+}
+.sa-nama .container .kvadrat ul li span {
+  font-size: 18px;
+}
+
+/**********************
+pratite-blog
+**********************/
+.pratite-blog {
+  /*height: 956px;*/
+  background-color: #140339;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.pratite-blog .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.pratite-blog .container .text {
+  margin-top: 198px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.pratite-blog .container .text div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.pratite-blog .container .text div div {
+  width: 20px;
+  height: 170px;
+  background-color: #00C9B5;
+}
+.pratite-blog .container .text div h2 {
+  width: 266px;
+  margin-left: 18px;
+  font-size: 50px;
+  color: white;
+}
+.pratite-blog .container .text div p {
+  margin-left: 277px;
+  width: 939px;
+  color: white;
+  font-size: 20px;
+}
+.pratite-blog .container .artikli {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+.pratite-blog .container .artikli article {
+  background-color: white;
+  width: calc((100% - 40px) / 3);
+  /* Postavljamo širinu članka na trećinu širine kontejnera s oduzetim marginama */
+}
+.pratite-blog .container .artikli article img {
+  width: 100%;
+}
+.pratite-blog .container .artikli article h4 {
+  margin-left: 34px;
+  margin-top: 45px;
+  margin-bottom: 29px;
+  font-size: 20px;
+  color: #00C9B5;
+}
+.pratite-blog .container .artikli article p {
+  margin-left: 34px;
+  margin-right: 29px;
+  margin-bottom: 29px;
+  font-size: 16px;
+}
+.pratite-blog .container .artikli article button {
+  margin-left: 169px;
+  margin-bottom: 29px;
+  width: 127px;
+  height: 37px;
+  background-color: #00C9B5;
+  border: none;
+}
+.pratite-blog .container .artikli article button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pratite-blog .container .dugme2 {
+  margin-bottom: 90px;
+  font-size: 18px;
+  margin-top: 73px;
+  width: 220px;
+  height: 50px;
+  color: white;
+  border: none;
+  background-color: #00C9B5;
+}
+.pratite-blog .container .dugme2:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pratite-blog .container .dugme2 img {
+  width: 14.62px;
+  height: 14.26px;
+}
+
+/**************************
+portfolio
+*************************/
+.portfolio {
+  background-color: #EEF1FF;
+}
+.portfolio .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.portfolio .container .text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: space-between;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-bottom: 79px;
+}
+.portfolio .container .text div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 456px;
+  position: relative;
+}
+.portfolio .container .text div div {
+  width: 20px;
+  height: 170px;
+  background-color: #00C9B5;
+  margin-top: 149px;
+  position: absolute;
+  left: 0;
+}
+.portfolio .container .text div h2 {
+  font-size: 50px;
+  margin-top: 153px;
+}
+.portfolio .container .text p {
+  width: 939px;
+  font-size: 20px;
+  margin-left: 186px;
+  margin-top: 172px;
+}
+.portfolio .container .slike {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 139px;
+  margin-top: 79px;
+}
+.portfolio .container .slike img {
+  width: 483px;
+  height: 322px;
+}
+
+/*****************************
+footer
+****************************/
+footer { /*height:546px;*/
+  background-color: #140339;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .container .gornji-deo {
+  width: 1520px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+footer .container .gornji-deo .ikonica {
+  margin-top: 109px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+footer .container .gornji-deo .ikonica img {
+  width: 103px;
+  height: 103px;
+}
+footer .container .gornji-deo .ikonica p {
+  text-align: left;
+  font-size: 18px;
+  width: 581px;
+  color: white;
+}
+footer .container .gornji-deo .kontakt {
+  margin-top: 88px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* .paragrafi{@include flex($direction:column);position:relative;margin-top:27px ;
+
+      .p1{position:absolute;
+         bottom: 55px;}
+  }
+      .p2{position:absolute;
+           bottom: 30px;}*/
+}
+footer .container .gornji-deo .kontakt h4 {
+  color: #00C9B5;
+  font-size: 25px;
+}
+footer .container .gornji-deo .kontakt p {
+  margin-bottom: 27px;
+  color: white;
+  font-size: 18px;
+}
+footer .povezimo-se {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .povezimo-se h4 {
+  padding-top: 20px;
+  color: #00C9B5;
+  font-size: 25px;
+}
+footer .povezimo-se div {
+  padding-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .povezimo-se div img {
+  width: 36;
+  height: 36px;
+  margin-left: 20px;
+  /*background-color: $zelena*/
+}
+footer hr {
+  width: 100%;
+  border: 1px solid #EEF1FF;
+  background-color: #EEF1FF;
+  margin-top: 88.5px;
+}
+footer p {
+  color: white;
+  text-align: center;
+  margin-bottom: 31px;
+  margin-top: 23.5px;
+}
+footer p span {
+  color: #00C9B5;
+}/*# sourceMappingURL=style.css.map */

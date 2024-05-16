@@ -21,6 +21,11 @@ h4 {
 h1 {
   font-size: 64px;
 }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 54px;
+  }
+}
 
 h2 {
   font-size: 48px;
@@ -44,6 +49,12 @@ a {
   width: 100%;
   margin: auto;
   /*border: 1px solid red*/
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+    width: 95%;
+  }
 }
 
 .btn {
@@ -73,13 +84,26 @@ a {
   padding: 80px 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
 nav {
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   /*ja dooooooodo **************
   ************************/
+}
+@media (max-width: 767px) {
+  nav {
+    padding: 10px 0;
+  }
 }
 nav .container {
   display: flex;
@@ -87,6 +111,11 @@ nav .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767px) {
+  nav .container {
+    flex-direction: column;
+  }
 }
 nav ul {
   display: flex;
@@ -99,6 +128,11 @@ nav a {
   color: #FACB36;
   margin-left: 50px;
   margin-left: 50px;
+}
+@media (max-width: 767px) {
+  nav a {
+    margin: 5px;
+  }
 }
 nav a:hover {
   color: white;
@@ -115,6 +149,11 @@ footer {
 footer img {
   width: 500px;
   margin: auto;
+}
+@media (max-width: 767px) {
+  footer img {
+    width: 100%;
+  }
 }
 footer p {
   color: white;
@@ -134,7 +173,12 @@ footer form {
 }
 footer form input {
   flex: 0 0 49%;
-  padding: 13px 0;
+  padding: 13px;
+}
+@media (max-width: 767px) {
+  footer form input {
+    flex: 0 0 100%;
+  }
 }
 footer form a {
   flex: 0 0 49%;
@@ -143,6 +187,12 @@ footer form a {
   font-size: 17px;
   font-weight: bold;
   color: #FACB36;
+}
+@media (max-width: 767px) {
+  footer form a {
+    flex: 0 0 100%;
+    margin-top: 20px;
+  }
 }
 
 .bottom-bar {
@@ -158,8 +208,12 @@ footer form a {
 
 .headers {
   position: relative;
+  /*height: 700px;*/
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .headers img {
+  height: 700px;
   filter: brightness(0.5);
 }
 .headers h1 {
@@ -183,11 +237,21 @@ footer form a {
   flex: 0 0 30%;
   overflow: hidden;
 }
-.dogadjaji div img {
-  width: 100%;
+@media (max-width: 767px) {
+  .dogadjaji div {
+    flex: 0 0 100%;
+  }
 }
 .dogadjaji div div {
   padding: 30px;
+}
+.dogadjaji div div img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .dogadjaji div div {
+    flex: 0 0 100%;
+  }
 }
 .dogadjaji div div h3 {
   margin: 13px 0;
@@ -209,6 +273,11 @@ footer form a {
   justify-content: center;
   align-items: center;
   color: white;
+}
+@media (max-width: 767px) {
+  .main-header img {
+    height: 700px;
+  }
 }
 .main-header p {
   padding: 20px 0 40px;
@@ -234,6 +303,12 @@ footer form a {
 .ponuda article div {
   flex: 0 0 32%;
 }
+@media (max-width: 767px) {
+  .ponuda article div {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+}
 .ponuda img {
   border: 5px solid #FACB36;
   border-radius: 100%;
@@ -257,6 +332,11 @@ footer form a {
 .meni div:first-child {
   flex: 0 0 60%;
 }
+@media (max-width: 767px) {
+  .meni div:first-child {
+    flex: 0 0 100%;
+  }
+}
 .meni div:first-child .row {
   display: flex;
   flex-wrap: wrap;
@@ -264,6 +344,11 @@ footer form a {
   justify-content: space-between;
   align-items: center;
   padding: 100px;
+}
+@media (max-width: 767px) {
+  .meni div:first-child .row {
+    padding: 20px;
+  }
 }
 .meni div:first-child .row .menu-item {
   display: flex;
@@ -273,6 +358,13 @@ footer form a {
   align-items: center;
   flex: 0 0 50%;
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .meni div:first-child .row .menu-item {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
 }
 .meni div:first-child .row .menu-item .img {
   flex: 0 0 40%;
@@ -299,6 +391,11 @@ footer form a {
 .meni div:last-child {
   flex: 0 0 40%;
 }
+@media (max-width: 767px) {
+  .meni div:last-child {
+    flex: 0 0 100%;
+  }
+}
 
 .usluge h2 {
   color: #FACB36;
@@ -316,9 +413,19 @@ footer form a {
 .usluge article div {
   flex: 0 0 50%;
 }
+@media (max-width: 767px) {
+  .usluge article div {
+    flex: 0 0 100%;
+  }
+}
 .usluge article div:last-child {
   background: #FCF4EA;
   padding: 100px 50px 50px 50px;
+}
+@media (max-width: 767px) {
+  .usluge article div:last-child {
+    padding: 30px;
+  }
 }
 .usluge article div:last-child h3 {
   color: #FACB36;
@@ -333,6 +440,12 @@ footer form a {
   background-position: center;
   background-size: cover;
   padding: 150px 0;
+}
+@media (max-width: 767px) {
+  .poruci {
+    padding: 100px 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/coffee\ 5.jpg);
+  }
 }
 .poruci h2 {
   color: #FACB36;
@@ -361,6 +474,11 @@ footer form a {
   flex: 0 0 30%;
   line-height: 36px;
 }
+@media (max-width: 767px) {
+  .kontakt div ul {
+    flex: 0 0 100%;
+  }
+}
 .kontakt div li {
   font-size: 18px;
 }
@@ -372,11 +490,22 @@ footer form a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .kontakt div form {
+    flex: 0 0 100%;
+  }
+}
 .kontakt div form input {
   flex: 0 0 49%;
   padding: 15px;
   font-size: 18px;
   border: 1px solid #a1a2a1;
+}
+@media (max-width: 767px) {
+  .kontakt div form input {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
 }
 .kontakt div form textarea {
   border: 1px solid #a1a2a1;

@@ -1,5 +1,5 @@
 <div class="dogadjaji container py text-center">
-    <div>
+    <div class="mb">
         <a href=""><img src="img/event-1.jpg" alt=""> </a>
         <div>
             <p>7. NOVEMBRA 2022.</p>
@@ -15,9 +15,9 @@
 
 
 
-    <div>
+    <div class="mb">
         <a href=""><img src="img/event-2.jpg" alt=""> </a>
-        <div>
+        <div >
             <p>7. NOVEMBRA 2022.</p>
             <h3>Vinski dan</h3>
             <span>Caffe / 0</span>
@@ -31,7 +31,7 @@
 
 
 
-    <div>
+    <div class="mb">
         <a href=""><img src="img/event-3.jpg" alt=""> </a>
         <div>
             <p>7. NOVEMBRA 2022.</p>

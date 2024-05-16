@@ -22,6 +22,10 @@ h4 {
 
 h1 {
     font-size: 64px;
+    @media(max-width:767px){
+        font-size: 54px;
+    }
+       
 }
 
 h2 {
@@ -47,6 +51,10 @@ a {
     width: 100%;
     margin: auto;
     /*border: 1px solid red*/
+    @media(max-width:767px){
+       padding: 0 20px;
+       width:95%
+    }
 }
 
 .btn {
@@ -76,29 +84,40 @@ a {
 .py {
     padding: 80px 0;
 }
-
+.text-center{text-align: center;}
+.mb{margin-bottom: 30px;}
 //nav
 nav {
     position: fixed;
     background: rgba($black, 0.8);
     width: 100%;
-    z-index: 1;
+    z-index: 100;
     /*ja dooooooodo **************
     ************************/
-
+    @media(max-width:767px){
+        padding: 10px 0; 
+    }
     .container {
-        @include flex()
+        @include flex();
+        @media (max-width: 767px) {
+          flex-direction:column;
+           
+        }
     }
 
     ul {
-        @include flex()
+        @include flex();
+     
     }
 
     a {
         color: $accents;
         margin-left: 50px;
         margin-left: 50px;
-
+        @media(max-width:767px){
+           margin:5px ;
+           
+        }
         &:hover {
             color: $white
         }
@@ -108,6 +127,7 @@ nav {
 img {
     width: 100%;
     display: block;
+   
 }
 
 //footer
@@ -116,7 +136,11 @@ footer {
 
     img {
         width: 500px;
-        margin: auto
+        margin: auto;
+        @media(max-width:767px){
+           width: 100%;
+    
+        }  
     }
 
     p {
@@ -134,7 +158,11 @@ footer {
 
         input {
             flex: 0 0 49%;
-            padding: 13px 0
+            padding: 13px ;
+            @media(max-width:767px){
+                flex:0 0 100%;
+        
+            }  
         }
 
         ;
@@ -145,7 +173,11 @@ footer {
             background: $black;
             font-size: 17px;
             font-weight: bold;
-            color: $accents
+            color: $accents;
+            @media(max-width:767px){
+                flex:0 0 100%;
+               margin-top: 20px;
+            }  
         }
     }
 
@@ -168,8 +200,9 @@ footer {
 //headers
 .headers {
     position: relative;
-
-    img {
+/*height: 700px;*/
+object-fit: cover;
+    img {height: 700px;
         filter: brightness(0.5);
     }
 
@@ -190,15 +223,22 @@ footer {
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 20px;
         flex: 0 0 30%;overflow: hidden;
-
+      
+        @media(max-width:767px){
+            flex:0 0 100%;
+   
+        } 
     
-
-    img {
-        width: 100%
+    div{ img {
+        width: 100%;
     }
-    div{padding:30px;
+        padding:30px;
+        
+        @media(max-width:767px){
+            flex:0 0 100%;
+    }  
     h3{margin:13px 0};
       span{color:$accents;display:inline-block;
-          margin-bottom: 20px; }}
+          margin-bottom: 20px; }}}
 
-}}
+}

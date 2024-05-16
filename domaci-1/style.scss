@@ -1,0 +1,689 @@
+@import 'vars';
+@import 'mixins';
+@import 'globals';
+
+/****************************
+header
+***************************/
+header {
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(#0000008A, 0.7)), url(images/images/home-hero.png);
+   background-position: center;
+   background-size: cover;
+   height: 1094px;
+
+   .container {
+      position: relative;
+
+      .navigacija {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+
+         img {
+            padding-top: 61px;
+         }
+
+         nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+               color: white;
+               margin-left: 43px;
+               font-size: 22px;
+               font-family: "Poppins", sans-serif;
+               font-weight: 400;
+               font-style: normal;
+               text-decoration: none;
+               ;
+
+               &:hover {
+                  color: red;
+               }
+            }
+
+         }
+
+      }
+
+      .text {
+         @include flex($direction: column, $align: strech);
+         width: 50%;
+         position: absolute;
+         top: 422px;
+         left: 0;
+
+         h1 {
+            color: white
+         }
+
+         ;
+
+         span {
+            color: $zelena
+         }
+
+         ;
+
+         p {
+            color: white;
+            font-size: 22px;
+         }
+
+         .dugme1 {
+            margin-top: 66px;
+         }
+
+         button img {
+            width: 17.42px;
+            height: 17.88px;
+            color: $svetloljubicasta
+         }
+      }
+   }
+}
+
+/****************************
+kursevi
+***************************/
+.kursevi {
+   background-color: $ljubicasta;
+   height: 646px;
+
+   .container {
+      position: relative;
+      @include flex();
+
+      article {
+         position: relative;
+         margin-top: 192px;
+         width: 470px;
+         height: 322px;
+         background-color: white;
+         padding: 105px 80px 55px 65px;
+         @include flex($direction: column);
+         text-align: center;
+
+         h1 {
+            font-size: 50px;
+         }
+
+         p {
+            width: 348px;
+            font-size: 18px;
+         }
+
+         span {
+            font-weight: bold;
+         }
+
+         img {
+            width: 145px;
+            height: 145px;
+            position: absolute;
+            top: -70px;
+            /*background-size: cover;*/
+            /* background-position: center;*/
+            background-color: $svetloljubicasta;
+            border-radius: 100%;
+         }
+      }
+   }
+}
+
+/***********************************
+kursevi2
+**********************************/
+.kursevi2 {
+   background-color: $siva;
+   ;
+   /*height: 1808px;*/
+   height: 2568px;
+
+   .container {
+      @include flex($direction: column);
+
+      .text {
+         margin-top: 194px;
+         @include flex($direction: row, $justify: space-between, $align: stretch);
+
+         .prvi_div {
+            @include flex($align: stretch);
+            flex: 0 0 30%;
+
+            div {
+               width: 20px;
+               height: 170px;
+               background-color: $svetloljubicasta;
+            }
+
+            h1 {
+               font-size: 50px !important;
+
+            }
+         }
+
+         p {
+            font-size: 20px !important;
+            text-align: justify;
+            flex: 0 0 60%;
+
+         }
+
+
+
+
+
+      }
+
+
+      .artikli {
+         margin-top: 171px;
+         @include flex();
+         gap: 56px;
+
+         article {
+            position: relative;
+            width: 465px;
+            height: 783px;
+            /**********novo**********/
+            @include flex($direction: column, $justify: stretch);
+            background-color: $ljubicasta;
+            color: white;
+
+            img {
+               width: 465px;
+               height: 500px;
+            }
+
+            .program {
+               margin-top: 10px;
+               @include flex($justify: space-between);
+
+               p {
+                  font-size: 25px;
+               }
+
+               .krug {
+                  width: 36px;
+                  height: 21px;
+                  margin-left: 50px;
+                  @include flex($direction: column, $justify: center, $align: center);
+
+                  border-radius: 100%;
+                  background-color: white;
+                  width: 76px;
+                  height: 76px;
+
+                  p {
+                     margin: 0;
+                     text-align: center
+                  }
+
+                  p:first-child {
+                     color: $svetloljubicasta;
+                     font-size: 29px !important;
+                  }
+
+                  p:last-child {
+                     color: $svetloljubicasta;
+                     font-size: 14px !important;
+                     /*ja postavio*/
+                  }
+               }
+
+            }
+
+            .text {
+               position: absolute;
+               bottom: 50px;
+               @include flex();
+
+               p {
+                  color: white;
+
+                  font-size: 18px !important;
+                  text-align: left;
+
+               }
+
+               ;
+
+               img {
+                  width: 21px;
+                  height: 21px;
+                  color: $zelena
+               }
+            }
+
+         }
+
+
+
+      }
+   }
+}
+
+/**********************
+o nama
+**********************/
+.o-nama {
+   height: 837px;
+   background-color: $ljubicasta;
+
+   .container {
+      width: 1520px;
+      margin-inline: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .text {
+
+         @include flex($direction: column);
+
+         div {
+            position: relative;
+            @include flex($justify: stretch);
+
+            div {
+               position: absolute;
+               left: -150px;
+               width: 20px;
+               height: 200px;
+               background-color: $zelena;
+            }
+
+            h2 {
+               position: relative;
+               top: -60px;
+               left: -80px;
+               font-size: 50px;
+               color: white;
+            }
+         }
+
+         p {
+            margin-top: 150px;
+            width: 520px;
+            font-size: 20px;
+            color: white;
+         }
+      }
+
+      .slika {
+
+
+         img {
+            width: 862px;
+            height: 575px;
+            margin-top: 166px;
+         }
+      }
+   }
+}
+
+/**************************
+sa nama
+***************************/
+.sa-nama {
+   height: 1113px;
+   background-color: $siva;
+
+   .container {
+      width: 1520px;
+      margin-inline: auto;
+      @include flex();
+
+      .text {
+         flex: 0 0 40%;
+         @include flex($direction: column, $align: stretch);
+
+         div {
+            position: relative;
+            @include flex();
+
+            div {
+               position: absolute;
+               top: -100px;
+               left: 0;
+               width: 20px;
+               height: 170px;
+               background-color: $zelena;
+            }
+
+            h2 {
+               width: 418px;
+               position: absolute;
+               top: -100px;
+               left: 38px;
+               font-size: 50px;
+            }
+         }
+
+         p {
+            margin-top: 178px;
+            width: 456px;
+            font-size: 26px;
+         }
+
+      }
+
+      .kvadrat {
+         margin-top: 201px;
+         flex: 0 0 55%;
+         width: 862px;
+         height: 702px;
+         background-color: $ljubicasta;
+         @include flex($direction: column, $justify: space-around);
+
+         h3 {
+            font-size: 40px;
+            color: white
+         }
+
+         ;
+
+         ul li img {
+            border-radius: 100%;
+            background-color: $zelena;
+            margin-right: 18.3px;
+            width: 34.88px;
+            height: 34.88px;
+         }
+
+         ul li {
+            font-family: "Poppins", sans-serif;
+            margin-top: 38.56px;
+            font-weight: 400;
+            font-style: normal;
+            color: $zelena;
+            font-size: 40px;
+            list-style: none;
+
+            span {
+               font-size: 18px;
+            }
+         }
+
+
+
+      }
+
+   }
+}
+
+/**********************
+pratite-blog
+**********************/
+.pratite-blog {
+   /*height: 956px;*/
+   background-color: $ljubicasta;
+   @include flex($direction: column);
+
+   .container {
+      @include flex($direction: column);
+
+      .text {
+         margin-top: 198px;
+         margin-bottom: 64px;
+         @include flex();
+
+         div {
+            @include flex();
+
+            div {
+               width: 20px;
+               height: 170px;
+               background-color: $zelena;
+            }
+
+            h2 {
+               width: 266px;
+               margin-left: 18px;
+               font-size: 50px;
+               color: white;
+            }
+
+            p {
+               margin-left: 277px;
+               width: 939px;
+               color: white;
+               font-size: 20px;
+            }
+         }
+      }
+
+      .artikli {
+         @include flex($direction: space-around);
+
+         article {
+            background-color: white;
+            width: calc((100% - (2 * 20px)) / 3);
+            /* Postavljamo širinu članka na trećinu širine kontejnera s oduzetim marginama */
+
+
+
+            img {
+               width: 100%;
+            }
+
+            h4 {
+               margin-left: 34px;
+               margin-top: 45px;
+               margin-bottom: 29px;
+               font-size: 20px;
+               color: $zelena;
+            }
+
+            p {
+               margin-left: 34px;
+               margin-right: 29px;
+               margin-bottom: 29px;
+               font-size: 16px;
+            }
+
+            button {
+               margin-left: 169px;
+               margin-bottom: 29px;
+               width: 127px;
+               height: 37px;
+               background-color: $zelena;
+               border: none;
+            }
+
+            button:hover {
+               background-color: transparent;
+               border: 1px solid black;
+               transition: $transition;
+               cursor: pointer
+            }
+
+         }
+      }
+
+      .dugme2 {
+         margin-bottom: 90px;
+         font-size: 18px;
+         margin-top: 73px;
+         width: 220px;
+         height: 50px;
+         color: white;
+         border: none;
+         background-color: $zelena;
+
+         &:hover {
+            border: 2px solid white;
+            background-color: transparent;
+            transition: $transition;
+            cursor: pointer;
+         }
+
+         img {
+            width: 14.62px;
+            height: 14.26px;
+         }
+      }
+   }
+}
+
+/**************************
+portfolio
+*************************/
+.portfolio {
+   background-color: $siva;
+
+   .container {
+      @include flex($direction: column, $justify: space-around);
+
+      .text {
+         @include flex($direction: space-between, $align: stretch);
+         flex-wrap: nowrap;
+         margin-bottom: 79px;
+
+         div {
+            @include flex($align: stretch);
+            width: 456px;
+            position: relative;
+
+            div {
+               width: 20px;
+               height: 170px;
+               background-color: $zelena;
+               margin-top: 149px;
+               position: absolute;
+               left: 0;
+            }
+
+            ;
+
+            h2 {
+               font-size: 50px;
+               margin-top: 153px
+            }
+         }
+
+         p {
+            width: 939px;
+            font-size: 20px;
+            margin-left: 186px;
+            margin-top: 172px
+         }
+
+      }
+
+      .slike {
+         @include flex();
+         margin-bottom: 139px;
+         margin-top: 79px;
+
+         img {
+            width: 483px;
+            height: 322px
+         }
+      }
+
+
+   }
+}
+
+/*****************************
+footer
+****************************/
+footer {/*height:546px;*/
+   background-color: $ljubicasta;
+
+   .container {
+      @include flex($direction: column, $align: center);
+
+      .gornji-deo { width: 1520px;
+         margin-inline: auto;
+         @include flex($align: stretch, $justify: space-between);
+
+         .ikonica {margin-top: 109px;
+            @include flex($direction: column,$align:stretch,$justify:space-evenly);
+
+            img {
+               width: 103px;
+               height: 103px
+            }
+
+            ;
+
+            p {text-align: left;
+               font-size: 18px;
+               width: 581px;
+               color: white
+            }
+         }
+
+         .kontakt {margin-top: 88px ;
+            @include flex($direction: column,$justify:space-around );
+
+            h4 {
+               color: $zelena;
+               font-size: 25px
+            }
+
+            p {margin-bottom:27px ;
+               color: white;
+               font-size: 18px;
+            }
+           /* .paragrafi{@include flex($direction:column);position:relative;margin-top:27px ;
+
+               .p1{position:absolute;
+                  bottom: 55px;}
+           }
+               .p2{position:absolute;
+                    bottom: 30px;}*/
+             }
+         }
+
+
+      }
+
+      .povezimo-se {
+         @include flex($direction: column);
+
+         h4 {padding-top: 20px;
+           
+            color: $zelena;
+            font-size: 25px
+         }
+
+         ;
+
+         div {padding-bottom: 150px;
+           
+            
+            @include flex();
+
+            img {
+               width: 36;
+               height: 36px;margin-left: 20px;
+               /*background-color: $zelena*/
+            }
+         }
+      }
+
+      hr {
+         width: 100%;
+         border: 1px solid $siva;
+         background-color: $siva;
+         margin-top: 88.5px;
+      }
+
+      p {
+         color: white;
+         text-align: center;
+         margin-bottom: 31px;
+         margin-top: 23.5px;
+
+         span {
+            color: $zelena;
+         }
+      }
+   }
